@@ -17,6 +17,7 @@ kubectl create ns wordpress-mysql
 ```
 kubectl config set-context  --current --namespace=wordpress-mysql
 ```
+note change efs credential in efs-prov profile
 ```
 kubectl create -f efs-prov.yml
 ```
@@ -38,3 +39,4 @@ kubectl create -f mysql-deployment
 ```
 kubectl create -f wordpressdeployment
 ```
+hence mysql and wordpress will be deployed
